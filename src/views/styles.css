@@ -1,0 +1,121 @@
+body,
+html {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+body {
+  font-family: 'Mitr', sans-serif;
+
+  background-color: #080404;
+
+}
+
+.conteudo {
+  padding: 1%;
+
+  gap: 10px;
+
+  display: grid;
+  place-items: center;
+
+  color: #ffffff;
+}
+
+.grid-termo {
+  display: grid;
+  grid-template-rows: repeat(5, 65px);
+  gap: 7px;
+
+  margin-bottom: 2%;
+}
+
+.grid-termo>.linha {
+  display: grid;
+  grid-template-columns: repeat(5, 65px);
+  gap: 7px;
+}
+
+.grid-termo>.linha>.letra {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background-color: #bebebe;
+  color: #2e2e2e;
+  border-radius: 3px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.grid-teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  gap: 2.2px;
+}
+
+.grid-teclado>button {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+.grid-teclado>.btn-enter {
+  grid-column: 2 span
+}
+
+.grid-teclado>button:hover {
+  background-color: transparent;
+
+  color: #32fe5e;
+
+  font-weight: 800;
+}
+
+.btn-reiniciar {
+  background-color: rgba(79, 99, 75, 0.342);
+  color: #32fe5e;
+  font-weight: 800;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.btn-reiniciar:hover {
+  background-color: #27482e;
+ 
+}
+
+.letra-correta{
+  background-color: #0fda0fb6 !important
+}
+
+.letra-incorreta {
+  background-color: #ffff00fa !important
+}
+
+.letra-inexistente {
+  background-color: #b85e5e !important
+}
+
+.group-mensagem {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal {
+  font-family: 'Mitr', sans-serif;
+}
+
+.tentativas {
+  background-color: lightgray;
+  padding: 1px 6px;
+  text-align: right;
+}
